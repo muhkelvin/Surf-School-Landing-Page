@@ -4,8 +4,11 @@
   "description": "Tinkerbench Portfolio Demo 04 - Surf School Landing Page",
   "main": "index.html",
   "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
     "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "dev:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "dev:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "start": "node scripts/server.js",
+    "serve": "node scripts/server.js"
   },
   "keywords": ["surf", "landing-page", "tinkerbench", "tailwind"],
   "author": "Tinkerbench",
