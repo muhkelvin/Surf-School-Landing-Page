@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #153A3A;
+    background-color: #F7F5EF;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Accessible focus states */
+  a:focus-visible,
+  button:focus-visible,
+  summary:focus-visible {
+    outline: 2px solid #F16D4F;
+    outline-offset: 3px;
+  }
+
+  /* Responsive clamp typography tokens */
+  .text-hero-h1 {
+    font-size: clamp(2.5rem, 6vw + 1rem, 5.75rem);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+  }
+
+  .text-section-h2 {
+    font-size: clamp(2rem, 3.5vw + 0.5rem, 3.75rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
+  .text-package-title {
+    font-size: clamp(1.5rem, 2vw + 0.5rem, 2rem);
+    line-height: 1.25;
+  }
+
+  .text-body-editorial {
+    font-size: clamp(1rem, 0.4vw + 0.9rem, 1.125rem);
+    line-height: 1.65;
+  }
+
+  .text-eyebrow {
+    font-size: 0.8125rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+/* Accordion details/summary custom clean styling */
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+details[open] .faq-icon {
+  transform: rotate(45deg);
+}
+
+/* Subtle image hover zoom */
+.img-zoom {
+  transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.img-zoom-container:hover .img-zoom {
+  transform: scale(1.03);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
