@@ -1,7 +1,7 @@
 {
   "name": "surf-landing-page",
   "version": "1.0.0",
-  "description": "Tinkerbench Portfolio Demo 04 - Surf School Landing Page",
+  "description": "Kala Surf School Landing Page",
   "scripts": {
     "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
     "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",

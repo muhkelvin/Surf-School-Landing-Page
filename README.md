@@ -1,6 +1,6 @@
 # Surf School — Landing Page (Kala Surf School)
 
-> **Tinkerbench Portfolio Demo 04**  
+> **Kala Surf School Landing Page**  
 > Conversion-Focused Landing Page for Surf Schools & Coastal Lesson Providers.
 
 ---
@@ -93,4 +93,4 @@ npx serve .
 - No floating 3D surfboards or generic cards.
 - Authentic editorial layouts with deliberate image crops and typography clamp scaling.
 - Native HTML `<details>` and `<summary>` for accessible, zero-JS FAQ accordion.
-- Clear demo notices and transparent package pricing with no hidden gear fees.
+- Clear package pricing with no hidden gear fees.
